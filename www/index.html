@@ -24,7 +24,7 @@
   <body ng-app="starter">
 
     <ion-pane ng-controller="SlideCtrl">
-      <ion-slide-box active-slide="activeSlide" pager-click="setSlide(index)">
+      <ion-slide-box auto-play="true" active-slide="activeSlide" pager-click="setSlide(index)">
         <ion-slide ng-repeat="slide in slides">
           <ion-header-bar class="bar-stable">
             <h1 class="title">{{slide.title}}</h1>
