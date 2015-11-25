@@ -23,20 +23,14 @@
   </head>
   <body ng-app="starter">
 
-    <ion-pane>
+    <ion-pane ng-controller="SlideCtrl">
       <ion-slide-box>
-        <ion-slide>
+        <ion-slide ng-repeat="slide in slides">
           <ion-header-bar class="bar-stable">
-            <h1 class="title">First Slide</h1>
+            <h1 class="title">{{slide.title}}</h1>
           </ion-header-bar>
           <ion-content>
-          </ion-content>
-        </ion-slide>
-        <ion-slide>
-          <ion-header-bar class="bar-stable">
-            <h1 class="title">Second Slide</h1>
-          </ion-header-bar>
-          <ion-content>
+            <h2>{{slide.content}}</h2>
           </ion-content>
         </ion-slide>
       </ion-slide-box>
