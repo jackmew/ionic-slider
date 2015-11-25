@@ -10,7 +10,12 @@ app.controller('SlideCtrl', function($scope) {
       title: 'Slider #' + i ,
       content: 'Slider content #' + i 
     });
-  }
+  };
+
+  $scope.activeSlide = 0 ;
+  $scope.setSlide = function(index) {
+    $scope.activeSlide = index ;
+  };
 
 });
 
